@@ -18,8 +18,8 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resultScoreLabel.text = "\(quizBrain.getScore())/\(String(quizBrain.quiz.count))"
-        //highScoreLabel.text = "\(quizBrain.getHighScore())"
+        resultScoreLabel.text = "\(quizBrain.getScore())/\(quizBrain.quiz.count)"
+        highScoreLabel.text = "\(quizBrain.getHighScore())"
 
         // Do any additional setup after loading the view.
     }

@@ -38,6 +38,7 @@ class QuizViewController: UIViewController {
             sender.backgroundColor = UIColor.red
         }
         
+        quizBrain.checkHighScore()
         quizBrain.nextQuestion()
         
         Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)

@@ -142,7 +142,7 @@ struct QuizBrain {
     let userDefaults = UserDefaults()
     var questionNumber = 0
     var score = 0
-    //var highScore = 0
+    var highScore = 0
     
     mutating func checkAnswer(_ userAnswer: String) -> Bool {
         if userAnswer == quiz[questionNumber].answer {
@@ -153,16 +153,11 @@ struct QuizBrain {
         }
     }
     
-//    mutating func checkHighScore() -> Int {
-//        if let high = userDefaults.value(forKey: "highScore") {
-//            if getScore() > high as! Int {
-//                userDefaults.setValue(getScore(), forKey: "highScore")
-//                highScore = userDefaults.value(forKey: "highScore") as! Int
-//            }
-//        }
-//        return highScore
-//    }
-    
+    mutating func checkHighScore() {
+        if getScore() > getHighScore() {
+             saveHighScore()
+        }
+    }
     
     func getQuestionText() -> String {
         return quiz[questionNumber].text
@@ -188,9 +183,14 @@ struct QuizBrain {
         return score
     }
     
-//    func getHighScore() -> Int {
-//        return highScore
-//    }
+    func getHighScore() -> Int {
+        let high = userDefaults.value(forKey: "highScore") ?? 0
+        return high as! Int
+    }
+    
+    func saveHighScore() {
+        userDefaults.setValue(score, forKey: "highScore")
+    }
     
     func getProgress() -> Float {
         let progress = Float(questionNumber) / Float(quiz.count)
