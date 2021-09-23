@@ -14,13 +14,15 @@ struct Question {
     let choiceOne: String
     let choiceTwo: String
     let choiceThree: String
+    let choiceFour: String
     let answer: String
     
-    init(text: String, choiceOne: String, choiceTwo: String, choiceThree: String, answer: String) {
+    init(text: String, choiceOne: String, choiceTwo: String, choiceThree: String, choiceFour: String, answer: String) {
         self.text = text
         self.choiceOne = choiceOne
         self.choiceTwo = choiceTwo
         self.choiceThree = choiceThree
+        self.choiceFour = choiceFour
         self.answer = answer
     }
 }
