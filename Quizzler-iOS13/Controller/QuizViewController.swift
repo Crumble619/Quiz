@@ -43,8 +43,12 @@ class QuizViewController: UIViewController {
         
         Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
         
-        
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let resultsViewController = segue.destination as? ResultsViewController {
+            resultsViewController.scoreFromQuiz = quizBrain.getScore()
+        }
     }
     
     @objc func updateUI() {
@@ -61,13 +65,8 @@ class QuizViewController: UIViewController {
             buttonFour.backgroundColor = UIColor.clear
             scoreLabel.text = "Score: \(quizBrain.getScore())"
         } else {
+            
             performSegue(withIdentifier: "toResultsScreen", sender: self)
         }
     }
-    
-//    func resultsScreen() {
-//        performSegue(withIdentifier: "toResultsScreen", sender: self)
-//    }
-    
 }
-

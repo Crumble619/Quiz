@@ -11,6 +11,7 @@ import UIKit
 class ResultsViewController: UIViewController {
     
     var quizBrain = QuizBrain()
+    var scoreFromQuiz: Int = 0
     
     @IBOutlet weak var resultScoreLabel: UILabel!
     @IBOutlet weak var highScoreLabel: UILabel!
@@ -18,8 +19,8 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resultScoreLabel.text = "\(quizBrain.getScore())/\(quizBrain.quiz.count)"
-        highScoreLabel.text = "\(quizBrain.getHighScore())"
+        resultScoreLabel.text = "\(scoreFromQuiz) / \(quizBrain.quiz.count)"
+        highScoreLabel.text = "\(quizBrain.getHighScore()) / \(quizBrain.quiz.count)"
 
         // Do any additional setup after loading the view.
     }

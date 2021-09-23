@@ -14,13 +14,13 @@ struct QuizBrain {
         Question(text: "The largest organ of the body that produces Vitamin D, cushions deeper tissues, and helps regulate body temperature:", choiceOne: "Muscular system", choiceTwo: "Skeletal system", choiceThree: "Integumentary system", choiceFour: "Nervous System", answer: "Integumentary system"),
         Question(text: "Hematopoiesis is a function of the:", choiceOne: "Muscular system", choiceTwo: "Integumentary system", choiceThree: "Respiratory system", choiceFour: "Skeletal System", answer: "Skeletal System"),
         Question(text: "Which of the following is the correct sequence, going from simplest to most complex, in the levels of structural organization of the human body?", choiceOne: "Organisms, organ system, tissue, organ, chemical, cellular level", choiceTwo: "Cellular, chemical, organ, tissue, organ system, organism level", choiceThree: "Chemical, cellular, tissue, organ, organ system, organism level", choiceFour: "Chemical, tissue, cellular, organ system, organ, organism level", answer: "Chemical, cellular, tissue, organ, organ system, organism level"),
-//        Question(text: "The study of the function of the body and body parts:", choiceOne: "Physiology", choiceTwo: "Anatomy", choiceThree: "Homeostasis", choiceFour: "Ecology", answer: "Physiology"),
-//        Question(text: "The study of the structure and the shape of the body:", choiceOne: "Physiology", choiceTwo: "Anatomy", choiceThree: "Biology", choiceFour: "Homeostasis", answer: "Anatomy"),
-//        Question(text: "What is the main function of the respiratory system?", choiceOne: "Transport oxygen, nutrients, and waste to and from body cells", choiceTwo: "Supply the body with oxygen and remove carbon dioxide", choiceThree: "Hematopoiesis", choiceFour: "Break down food and deliver the products to the blood for dispersal", answer: "Supply the body with oxygen and remove carbon dioxide"),
-//        Question(text: "The system that controls and coordinates the body through hormones:", choiceOne: "Nervous system", choiceTwo: "Endocrine system", choiceThree: "Respiratory system", choiceFour: "Circulatory system", answer: "Endocrine system"),
-//        Question(text: "The muscular system includes:", choiceOne: "Cardiac, smooth, skeletal muscle", choiceTwo: "Cardiac and skeletal only", choiceThree: "Skeletal muscle only", choiceFour: "Smooth and cardiac only", answer: "Skeletal muscle only"),
-//        Question(text: "The pancreas is part of which two organ systems?", choiceOne: "Digestive and urinary", choiceTwo: "Reproductive and endocrine", choiceThree: "Endocrine and Respiratory", choiceFour: "Digestive and endocrine", answer: "Digestive and endocrine"),
-//        Question(text: "The elbow is _____to the wrist.", choiceOne: "Distal", choiceTwo: "Proximal", choiceThree: "Lateral", choiceFour: "Inferior", answer: "Proximal"),
+        Question(text: "The study of the function of the body and body parts:", choiceOne: "Physiology", choiceTwo: "Anatomy", choiceThree: "Homeostasis", choiceFour: "Ecology", answer: "Physiology"),
+        Question(text: "The study of the structure and the shape of the body:", choiceOne: "Physiology", choiceTwo: "Anatomy", choiceThree: "Biology", choiceFour: "Homeostasis", answer: "Anatomy"),
+        Question(text: "What is the main function of the respiratory system?", choiceOne: "Transport oxygen, nutrients, and waste to and from body cells", choiceTwo: "Supply the body with oxygen and remove carbon dioxide", choiceThree: "Hematopoiesis", choiceFour: "Break down food and deliver the products to the blood for dispersal", answer: "Supply the body with oxygen and remove carbon dioxide"),
+        Question(text: "The system that controls and coordinates the body through hormones:", choiceOne: "Nervous system", choiceTwo: "Endocrine system", choiceThree: "Respiratory system", choiceFour: "Circulatory system", answer: "Endocrine system"),
+        Question(text: "The muscular system includes:", choiceOne: "Cardiac, smooth, skeletal muscle", choiceTwo: "Cardiac and skeletal only", choiceThree: "Skeletal muscle only", choiceFour: "Smooth and cardiac only", answer: "Skeletal muscle only"),
+        Question(text: "The pancreas is part of which two organ systems?", choiceOne: "Digestive and urinary", choiceTwo: "Reproductive and endocrine", choiceThree: "Endocrine and Respiratory", choiceFour: "Digestive and endocrine", answer: "Digestive and endocrine"),
+        Question(text: "The elbow is _____to the wrist.", choiceOne: "Distal", choiceTwo: "Proximal", choiceThree: "Lateral", choiceFour: "Inferior", answer: "Proximal"),
 //        Question(text: "The sternum is _____ to the heart.", choiceOne: "Deep", choiceTwo: "Medial", choiceThree: "Posterior", choiceFour: "Anterior", answer: "Anterior"),
 //        Question(text: "The anterior surface of the elbow:", choiceOne: "Popliteal", choiceTwo: "Antebrachial", choiceThree: "Antecubital", choiceFour: "Femoral", answer: "Antecubital"),
 //        Question(text: "Which of the following best describes the lower back region?", choiceOne: "Anterior; Thoracic cavity", choiceTwo: "Anterior; Sternum", choiceThree: "Posterior; Lumbar region", choiceFour: "Anterior; Lumbar region", answer: "Posterior; Lumbar region"),
@@ -135,8 +135,7 @@ struct QuizBrain {
 //        Question(text: "Which one of the following substances is normally found in urine?", choiceOne: "Creatinine", choiceTwo: "Hemoglobin", choiceThree: "Red blood cells", choiceFour: "White blood cells", answer: "Creatinine"),
 //        Question(text: "The average adult bladder is moderately full with _____ of urine within it.", choiceOne: "1000mL", choiceTwo: "100mL", choiceThree: "1 liter", choiceFour: "500mL", answer: "500mL"),
 //        Question(text: "A blood pH of 7.4 is considered:", choiceOne: "Acidic", choiceTwo: "Normal", choiceThree: "Basic", choiceFour: "Acidosis", answer: "Normal"),
-//        Question(text: "When carbon dioxide enters the blood from tissue cells, it is converted to _____ for transport within blood plasma.", choiceOne: "Ammonia", choiceTwo: "Sodium hydroxide", choiceThree: "Bicarbonate ion", choiceFour: "Urea", answer: "Bicarbonate ion"),
-        //Question(text: "", choiceOne: "", choiceTwo: "", choiceThree: "", choiceFour: "", answer: ""),
+//        Question(text: "When carbon dioxide enters the blood from tissue cells, it is converted to _____ for transport within blood plasma.", choiceOne: "Ammonia", choiceTwo: "Sodium hydroxide", choiceThree: "Bicarbonate ion", choiceFour: "Urea", answer: "Bicarbonate ion")
     ].shuffled()
     
     let userDefaults = UserDefaults()
@@ -202,5 +201,4 @@ struct QuizBrain {
             questionNumber += 1
         }
     }
-    
 }
