@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3B3F9DBC26A3321300584E83 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F9DBB26A3321300584E83 /* QuizBrain.swift */; };
 		3B4006A526A2774100370D99 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4006A426A2774100370D99 /* Question.swift */; };
 		3B4A96F026E7CE45006D7BB8 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4A96EF26E7CE45006D7BB8 /* ResultsViewController.swift */; };
+		5D6FCA1046D6B2CA10B4CB47 /* Pods_Quizzler_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38BAFB3B8298156F7637271 /* Pods_Quizzler_iOS13.framework */; };
 		AD4BDE4A22D878BA005BA4CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */; };
 		AD4BDE4C22D878BA005BA4CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */; };
 		AD4BDE4E22D878BA005BA4CC /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BDE4D22D878BA005BA4CC /* QuizViewController.swift */; };
@@ -22,6 +23,7 @@
 		3B3F9DBB26A3321300584E83 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		3B4006A426A2774100370D99 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		3B4A96EF26E7CE45006D7BB8 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		3E19492D02235CAFA2D3D945 /* Pods-Quizzler-iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzler-iOS13.debug.xcconfig"; path = "Target Support Files/Pods-Quizzler-iOS13/Pods-Quizzler-iOS13.debug.xcconfig"; sourceTree = "<group>"; };
 		AD4BDE4622D878BA005BA4CC /* Quizzler-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quizzler-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		AD4BDE5222D878BC005BA4CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD4BDE5522D878BC005BA4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD4BDE5722D878BC005BA4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F38BAFB3B8298156F7637271 /* Pods_Quizzler_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quizzler_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F632449DCDE2D5EAC1792BD5 /* Pods-Quizzler-iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzler-iOS13.release.xcconfig"; path = "Target Support Files/Pods-Quizzler-iOS13/Pods-Quizzler-iOS13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D6FCA1046D6B2CA10B4CB47 /* Pods_Quizzler_iOS13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,10 +68,28 @@
 		3B3F9DBA26A331CB00584E83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3B3F9DB926A331BA00584E83 /* View */,
 				AD4BDE4D22D878BA005BA4CC /* QuizViewController.swift */,
 				3B4A96EF26E7CE45006D7BB8 /* ResultsViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		459710D46A771FEB306473F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F38BAFB3B8298156F7637271 /* Pods_Quizzler_iOS13.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9933698F3588C90F22AD1E71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E19492D02235CAFA2D3D945 /* Pods-Quizzler-iOS13.debug.xcconfig */,
+				F632449DCDE2D5EAC1792BD5 /* Pods-Quizzler-iOS13.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		AD4BDE3D22D878BA005BA4CC = {
@@ -74,6 +97,8 @@
 			children = (
 				AD4BDE4822D878BA005BA4CC /* Quizzler-iOS13 */,
 				AD4BDE4722D878BA005BA4CC /* Products */,
+				9933698F3588C90F22AD1E71 /* Pods */,
+				459710D46A771FEB306473F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +116,6 @@
 				AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */,
 				AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */,
 				3B3F9DB826A331B500584E83 /* Model */,
-				3B3F9DB926A331BA00584E83 /* View */,
 				3B3F9DBA26A331CB00584E83 /* Controller */,
 				AD4BDE5222D878BC005BA4CC /* Assets.xcassets */,
 				AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */,
@@ -107,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD4BDE5A22D878BC005BA4CC /* Build configuration list for PBXNativeTarget "Quizzler-iOS13" */;
 			buildPhases = (
+				5A8B80F5610A5A59DD79D542 /* [CP] Check Pods Manifest.lock */,
 				AD4BDE4222D878BA005BA4CC /* Sources */,
 				AD4BDE4322D878BA005BA4CC /* Frameworks */,
 				AD4BDE4422D878BA005BA4CC /* Resources */,
+				9401DB2770A2408EF256EE66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +191,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A8B80F5610A5A59DD79D542 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quizzler-iOS13-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9401DB2770A2408EF256EE66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quizzler-iOS13/Pods-Quizzler-iOS13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quizzler-iOS13/Pods-Quizzler-iOS13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quizzler-iOS13/Pods-Quizzler-iOS13-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD4BDE4222D878BA005BA4CC /* Sources */ = {
@@ -318,6 +386,7 @@
 		};
 		AD4BDE5B22D878BC005BA4CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E19492D02235CAFA2D3D945 /* Pods-Quizzler-iOS13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +405,7 @@
 		};
 		AD4BDE5C22D878BC005BA4CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F632449DCDE2D5EAC1792BD5 /* Pods-Quizzler-iOS13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
